@@ -22,14 +22,15 @@ Use this section to describe your final project and perhaps any links to relevan
 
 ## Google Sheet
 
-Include link to your google sheet here.  Here is the sample [Joe had used in class](https://docs.google.com/spreadsheets/d/15PmioBi2dQEkewpqI7MDkDpvcVF0Trw8vmarAQbwoHk/edit#gid=0) 
+https://docs.google.com/spreadsheets/d/1-cr4HyUsV0uPqpBe4AQIYyC5W2JHpm1-3mlrxi825ME/edit#gid=0
 
 ## Wireframes
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
-[https://www.figma.com/](https://www.figma.com/)
-[https://mockflow.com/app/#Wireframe](https://mockflow.com/app/#Wireframe)
+Still figuring out theme and color schemes.
+
+https://wireframepro.mockflow.com/editor.jsp?editor=off&publicid=Ma85a4d549b1e44a49d2a7f8ed9e19f201583541668885&projectid=M5256a4719c4bb80f35c4a57c8fa506831583541049691&perm=Owner#/page/b9f2759ddd5c4d4da6338028cf00a869/sidebar/off
 
 ## Time/Priority Matrix 
 
