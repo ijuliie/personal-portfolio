@@ -46,16 +46,14 @@ Once complete tally up the time and determine how long the project will take to 
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-#### MVP (examples)
+#### MVP
 
-- Pull data using google json api
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+-hamburger nav bar
+-pull data from google sheet
 
 #### PostMVP 
 
-- Anything else that is not MVP
+
 
 ## Functional Components
 
@@ -65,7 +63,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Background image banner | H | 2hrs| 2hrs | 2hrs |
+| Background image banner | H | 2hrs | 2hrs | 2hrs |
+| Hamburger nav bar | H | 2hrs | 1.5 hrs | 1.5 hrs |
 | Total | H | hrs| hrs | hrs |
 
 ## Additional Libraries

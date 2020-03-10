@@ -34,5 +34,5 @@ function app(projects){
 
 
 $(".fa-bars").on("click", () => {
-    $("li").toggleClass("show")
+    $("ul").slideToggle()
 })
