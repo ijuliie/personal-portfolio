@@ -1,0 +1,75 @@
+body {
+    margin: 0 auto;
+}
+
+/* hamburger nav */
+nav ul {
+    font-family: "shadows into light", cursive;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+ul > li {
+    padding: 10px;
+    display: none;
+}
+
+.show {
+    transition: 0.3s;
+    display: block;
+}
+
+ul > li a:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: #494F54;
+}
+
+/* icon decoration */
+
+nav > div {
+    text-align: center;
+    margin-left: 45px;
+    font-size: 40px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+/* banner */
+
+.background-image {
+    background-image: url(/images/photo-1562696232-c59a1aee6b0f.jpeg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+div:nth-of-type(1) h1 {
+    font-family: Pacifico, cursive;
+    text-align: center;
+    font-size: 50px;
+    color: #494F54;
+}
+
+section {
+    font-family: "shadows into light", cursive;
+}
+
+section > h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #494F54;
+}
+
+section > h3 {
+    text-align: center;
+}
