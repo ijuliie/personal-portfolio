@@ -32,7 +32,6 @@ function app(projects){
 
 }
 
-
 $(".fa-bars").on("click", () => {
     $("ul").slideToggle()
 })

@@ -1,12 +1,10 @@
 body {
     margin: 0 auto;
+    font-family: "shadows into light", cursive;
 }
 
-/* hamburger nav */
-nav div:nth-of-type(1) {
-    text-align: center;
-}
 
+/* icon decoration */
 .fas {   
     margin-left: 45px;
     font-size: 40px;
@@ -14,16 +12,21 @@ nav div:nth-of-type(1) {
     cursor: pointer;
 }
 
+/* hamburger nav */
+nav div:nth-of-type(1) {
+    text-align: center;
+}
+
 .hide {
-    font-family: "shadows into light", cursive;
     font-size: 40px;
     list-style: none;
     text-align: center;
+    text-transform: lowercase;
     display: none;
 }
 
 ul > li a:hover {
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 a {
@@ -31,15 +34,6 @@ a {
     color: #494F54;
 }
 
-/* icon decoration */
-
-/* nav > div {
-    text-align: center;
-    margin-left: 45px;
-    font-size: 40px;
-    padding-top: 10px;
-    cursor: pointer;
-} */
 
 /* banner */
 
@@ -60,16 +54,108 @@ div:nth-of-type(1) h1 {
     color: #494F54;
 }
 
-section {
-    font-family: "shadows into light", cursive;
-}
+/* about me */
 
-section > h1 {
-    font-size: 3em;
+section:nth-of-type(1) div:nth-of-type(2) {
+    margin-top: -200px;
+    font-size: 1em;
     text-align: center;
     color: #494F54;
 }
 
+section:nth-of-type(1) div:nth-of-type(2) h1 {
+    font-size: 40px;
+}
+
+
+/* Projects */
+
+section:nth-of-type(2) h1 {
+    font-family: "shadows into light", cursive;
+    font-size: 40px;
+}
+
+.projects, .url {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects h1 {
+    text-align: center;
+}
+
+.projects .boxes {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 3px;
+    border: 1px solid black;
+}
+
+.image {
+    border: 1px solid blue;
+    height: 130px;
+}
+
+/* form */
+
+.contact {
+    font-family: ;
+}
+
 section > h3 {
     text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    font-size: 20px;
+    font-family: "shadows into light", cursive;
+    height: 30px;
+    width: 300px;
+    margin: 5px;
+}
+
+textarea {
+    font-size: 20px;
+    font-family: "shadows into light", cursive;
+    width: 298px;
+    border: 2px solid lightgray;
+}
+
+button {
+    font-family: "shadows into light", cursive;
+    font-size: 15px;
+    width: 70px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+}
+
+@media (min-width: 768px) {
+    .projects {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1080px) {
+
+    /* .navbar {
+        display: flex;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } */
+
+    section:nth-of-type(1) > div:nth-of-type(2) {
+        margin-top: 50px;
+    }
 }
