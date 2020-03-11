@@ -1,8 +1,8 @@
 body {
     margin: 0 auto;
     font-family: "shadows into light", cursive;
+    color: #494F54;
 }
-
 
 /* icon decoration */
 .fas {   
@@ -13,6 +13,7 @@ body {
 }
 
 /* hamburger nav */
+
 nav div:nth-of-type(1) {
     text-align: center;
 }
@@ -22,7 +23,16 @@ nav div:nth-of-type(1) {
     list-style: none;
     text-align: center;
     text-transform: lowercase;
-    display: none;
+    visibility: hidden;
+    margin-top: -150px;
+    transition: all 0.4s linear;
+}
+
+.show {
+    display: block;
+    margin-top: 10px;
+    visibility: visible;
+    transition: all 0.4s linear;
 }
 
 ul > li a:hover {
@@ -45,12 +55,13 @@ a {
     height: 500px;
     background-repeat: no-repeat;
     background-size: 100%;
+    margin-top: -19px;
 }
 
 div:nth-of-type(1) h1 {
-    font-family: Pacifico, cursive;
+    font-family: "Alex Brush", cursive;
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     color: #494F54;
 }
 
@@ -81,7 +92,7 @@ section:nth-of-type(2) h1 {
     align-items: center;
 }
 
-.projects h1 {
+section > h1 {
     text-align: center;
 }
 
@@ -98,11 +109,6 @@ section:nth-of-type(2) h1 {
 }
 
 /* form */
-
-.contact {
-    font-family: ;
-}
-
 section > h3 {
     text-align: center;
 }
@@ -135,6 +141,12 @@ button {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
 }
 
+/* footer */
+
+footer {
+    text-align: center;
+}
+
 @media (min-width: 768px) {
     .projects {
         flex-direction: row;
@@ -144,18 +156,33 @@ button {
 }
 
 @media (min-width: 1080px) {
-
-    /* .navbar {
+    .fa-bars {
+        visibility: hidden;
+    }
+    
+    .hide {
         display: flex;
+        justify-content: space-evenly;
+        visibility: visible;
+        margin-top: -30px;
     }
 
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    } */
+    .background-image {
+        height: 735px;
+    }
+
+    div:nth-of-type(1) h1 {
+        font-size: 6em;
+    }
 
     section:nth-of-type(1) > div:nth-of-type(2) {
         margin-top: 50px;
+    }
+
+    .projects {
+        /* margin-left: 50px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr) */
     }
 }
