@@ -32,6 +32,58 @@ function app(projects){
 
 }
 
+
+// if($(window).width() < 500 && $(window).width() < 768){
+//     $(".fa-bars").on("click", () => {
+//         $("ul").slideToggle()
+//     })
+// } else {
+//     console.log("desktop")
+// }
+
+
+// if(window.matchMedia("(min-width: 500)").matches){
+//     $(".fa-bars").on("click", () => {
+//         $("ul").slideToggle()
+//     })    
+// }
+
+// $(".fa-bars").on("click", () => {
+//     $("ul").slideToggle()
+// })
+
+let $width = $(window).width()
+
+console.log($width)
+
+// function toggleNav() {
+//     if($width > 769) {
+//         $("i").hide()
+//         $("ul").css("display", "flex")
+//         .css("flex-direction", "row")
+//         .css("justify-content", "space-around")
+//     }
+//     if($width < 501 || $width < 769) {
+//         $(".fa-bars").on("click", () => {
+//             $("ul").slideToggle()
+//         })
+//     }
+// }
+
+
+// if($width < 501 && $width < 768) {
+//     $(".fa-bars").on("click", () => {
+//         $("ul").slideToggle()
+// })
+
+// $(document).ready( () => {
+//     toggleNav()
+// })
+
+// $(window).resize( () => {
+//     toggleNav()
+// });
+
 $(".fa-bars").on("click", () => {
-    $("ul").slideToggle()
+    $("ul").toggleClass("show")
 })
