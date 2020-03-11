@@ -21,69 +21,23 @@ fetch(source)
     
 
 function app(projects){
-    
-    $.each(() => {
-        let $img = $("<img>").attr(image.gsx$image.$t)
-        $img.html("project")
-        $(".projects").append($img)
-    })
-    
-    console.log("app-projects:", projects)
+    appendData(projects)
+}
 
+function appendData(projects, i) {
+    for(let i = 0; i < projects.length; i += 1){
+        let $wrapper = $("<div>").addClass("boxes")
+        let $image = $("<img>").attr("src", projects[i].image).addClass("image")
+        let $title = $("<p>").html(projects[i].title).addClass("title")
+        let $url = $("<a>").attr("href", projects[i].url).html("See code")
+    
+        $wrapper.append($image, $title, $url)
+        $(".projects").append($wrapper)
+    }
 }
 
 
-// if($(window).width() < 500 && $(window).width() < 768){
-//     $(".fa-bars").on("click", () => {
-//         $("ul").slideToggle()
-//     })
-// } else {
-//     console.log("desktop")
-// }
-
-
-// if(window.matchMedia("(min-width: 500)").matches){
-//     $(".fa-bars").on("click", () => {
-//         $("ul").slideToggle()
-//     })    
-// }
-
-// $(".fa-bars").on("click", () => {
-//     $("ul").slideToggle()
-// })
-
-let $width = $(window).width()
-
-console.log($width)
-
-// function toggleNav() {
-//     if($width > 769) {
-//         $("i").hide()
-//         $("ul").css("display", "flex")
-//         .css("flex-direction", "row")
-//         .css("justify-content", "space-around")
-//     }
-//     if($width < 501 || $width < 769) {
-//         $(".fa-bars").on("click", () => {
-//             $("ul").slideToggle()
-//         })
-//     }
-// }
-
-
-// if($width < 501 && $width < 768) {
-//     $(".fa-bars").on("click", () => {
-//         $("ul").slideToggle()
-// })
-
-// $(document).ready( () => {
-//     toggleNav()
-// })
-
-// $(window).resize( () => {
-//     toggleNav()
-// });
-
+//Hamburger nav bar
 $(".fa-bars").on("click", () => {
     $("ul").toggleClass("show")
 })
