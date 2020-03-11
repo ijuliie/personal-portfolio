@@ -65,10 +65,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | Background image banner | H | 2hrs | 2hrs | 2hrs |
 | Hamburger nav bar | H | 2hrs | 1.5 hrs | 1.5 hrs |
+| Animation on nav bar | H | 2hrs | 4 hrs | 4 hours |
 | Total | H | hrs| hrs | hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+
 
 ## Code Snippet
 
