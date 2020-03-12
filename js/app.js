@@ -45,19 +45,22 @@ let $navigation = $(".navbar > div:nth-of-type(2) > ul > li > a")
 console.log($navigation)
 
  
-// function activeLink(){
-//     $(".hide .nav-item a").click(function() {
-//         //remove active class
-//         $(".nav-item").removeClass("active")
-//         $(this).closest(".nav-item").addClass("active")
-//     })
-// }
+$(".hide .nav-item a").on("click", function() {
+    //remove active class
+    $(".nav-item").removeClass("active")
+    $(this).closest(".nav-item").addClass("active")
+})
 
-// activeLink()
+// let $section = $("sections")
+// $(window).on("scroll", function(){
+    
+// })
 
 
 /*     scroll animation      */
-/* https://timoanttila.com/tutorials/animated-smooth-scrolling-effect */
+/* 
+        link for scroll animation:
+https://timoanttila.com/tutorials/animated-smooth-scrolling-effect */
 
 $(function() {
     $(".hide .nav-item a").click(function() {
@@ -73,3 +76,32 @@ $(function() {
       }
     })
   })
+
+
+/*      highlight active menu when scrolling down to sections    */
+/* https://www.steckinsights.com/change-active-menu-as-you-scroll-with-jquery/ */
+
+$(document).ready( () => { 
+    $(window).scroll( () => {
+        let $scrollPosition = $(window).scrollTop() + 1
+        let $aboutme = $("#aboutme").offset().top
+        let $projects = $("#projects").offset().top
+        let $contact = $("#contact").offset().top
+
+        if ($scrollPosition >= $aboutme && $scrollPosition <= $projects) { 
+            $(".nav-item-1").addClass("active")
+        } else {
+            $(".nav-item-1").removeClass("active")
+        }
+        if ($scrollPosition >= $projects && $scrollPosition <= $contact) {
+            $(".nav-item-2").addClass("active")
+        } else { 
+            $(".nav-item-2").removeClass("active")
+        }
+        if ($scrollPosition >= $contact) {
+            $(".nav-item-3").addClass("active")
+        } else { 
+            $(".nav-item-3").removeClass("active")
+        }
+    })
+})
