@@ -8,7 +8,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
+|Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
@@ -28,19 +28,11 @@ https://docs.google.com/spreadsheets/d/1-cr4HyUsV0uPqpBe4AQIYyC5W2JHpm1-3mlrxi82
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
-Still figuring out theme and color schemes.
-
 https://wireframepro.mockflow.com/editor.jsp?editor=off&publicid=Ma85a4d549b1e44a49d2a7f8ed9e19f201583541668885&projectid=M5256a4719c4bb80f35c4a57c8fa506831583541049691&perm=Owner#/page/b9f2759ddd5c4d4da6338028cf00a869/sidebar/off
 
 ## Time/Priority Matrix 
 
-Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
 
-Now draw a vertical line on the y axis.  The top of this line should have `High` and the bottom `Low`.  This line will be used to assign a priority to to each feature you wish to include in the project.  
-
-Now create a separate list starting with A and assign it one of the features.  Continue to assign each feature a letter.  Once complete add each letter to the matrix assigning based on what your feel it's prioirty is an how long it will take to implement. If any one feature takes longer than 2hrs to complete than break it down into smaller tasks and reassign them a new letter. 
-
-Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
 
 ### MVP/PostMVP - 5min
 
@@ -52,7 +44,10 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 -pull data from google sheet
 
 #### PostMVP 
-
+-hamburger nav bar
+-pull data from google sheet
+-transition effect for navbar
+-navbar is active when scrolled to content of page
 
 
 ## Functional Components
@@ -64,8 +59,9 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Background image banner | H | 2hrs | 2hrs | 2hrs |
-| Hamburger nav bar | H | 2hrs | 1.5 hrs | 1.5 hrs |
-| Animation on nav bar | H | 2hrs | 4 hrs | 4 hours |
+| Hamburger nav bar | H | 2hrs | 1.5 hrs | 3.5 hrs |
+| Animation on nav bar | H | 2hrs | 4 hrs | 6 hours |
+| Pull data from google sheet| H | 1 hr | 2.5 hrs | 2.5 hrs | 
 | Total | H | hrs| hrs | hrs |
 
 ## Additional Libraries
@@ -82,7 +78,7 @@ function reverse(string) {
 ```
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
+
 
 #### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
