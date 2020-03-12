@@ -25,17 +25,17 @@ nav div:nth-of-type(1) {
     text-transform: lowercase;
     visibility: hidden;
     margin-top: -150px;
-    transition: all 0.4s linear;
+    transition: all 0.5s linear;
 }
 
 .show {
     display: block;
     margin-top: 10px;
     visibility: visible;
-    transition: all 0.4s linear;
+    transition: all 0.5s linear;
 }
 
-ul > li a:hover {
+ul > li a:hover, .active {
     font-weight: bold;
 }
 
@@ -97,15 +97,16 @@ section > h1 {
 }
 
 .projects .boxes {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 400px;
     margin-bottom: 3px;
     border: 1px solid black;
 }
 
 .image {
-    border: 1px solid blue;
-    height: 130px;
+    /* border: 1px solid blue; */
+    height: 160px;
+    width: 400px;
 }
 
 /* form */
@@ -148,6 +149,10 @@ footer {
 }
 
 @media (min-width: 768px) {
+    section:nth-of-type(1) > div:nth-of-type(2) {
+        margin-top: -25px;
+    }
+
     .projects {
         flex-direction: row;
         justify-content: space-around;
@@ -159,30 +164,37 @@ footer {
     .fa-bars {
         visibility: hidden;
     }
-    
+
     .hide {
         display: flex;
         justify-content: space-evenly;
         visibility: visible;
-        margin-top: -30px;
+        margin-top: -0px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.1);
     }
 
     .background-image {
         height: 735px;
+        margin-top: 10px;
     }
+
+    section:nth-of-type(1) div:nth-of-type(2) h1 {
+        text-align: left;
+    }
+
 
     div:nth-of-type(1) h1 {
         font-size: 6em;
     }
 
     section:nth-of-type(1) > div:nth-of-type(2) {
-        margin-top: 50px;
+        margin-top: -20px;
     }
 
     .projects {
-        /* margin-left: 50px;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(3, 1fr) */
+        justify-content: space-around;
     }
 }
