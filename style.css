@@ -49,7 +49,7 @@ a {
 /* banner */
 
 .background-image {
-    background-image: url(/images/photo-1562696232-c59a1aee6b0f.jpeg);
+    background-image: url(images/photo-1562696232-c59a1aee6b0f.jpeg);
     display: flex;
     justify-content: center;
     flex-direction: column;
