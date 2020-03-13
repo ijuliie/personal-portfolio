@@ -17,23 +17,24 @@ fetch(source)
         app(projects)
     })
 
-    
-
-function app(projects){
-    appendData(projects)
-}
-
+/*      append data into html       */
 function appendData(projects, i) {
     for(let i = 0; i < projects.length; i += 1){
         let $wrapper = $("<div>").addClass("boxes")
         let $image = $("<img>").attr("src", projects[i].image).addClass("image")
         let $title = $("<p>").html(projects[i].title).addClass("title")
         let $url = $("<a>").attr("href", projects[i].url).html("See code").addClass("url")
-    
+        
         $wrapper.append($image, $title, $url)
         $(".projects").append($wrapper)
     }
 }
+    
+
+function app(projects){
+    appendData(projects)
+}
+
 
 
 /*       Hamburger nav bar       */
@@ -41,67 +42,59 @@ $(".fa-bars").on("click", () => {
     $("ul").toggleClass("show")
 })
 
-let $navigation = $(".navbar > div:nth-of-type(2) > ul > li > a")
-console.log($navigation)
 
- 
+
+/*      navbar element is highlighted when clicked    */
 $(".hide .nav-item a").on("click", function() {
-    //remove active class
     $(".nav-item").removeClass("active")
+    //closest finds all child element
     $(this).closest(".nav-item").addClass("active")
 })
 
-// let $section = $("sections")
-// $(window).on("scroll", function(){
-    
-// })
 
 
 /*     scroll animation      */
-/* 
-        link for scroll animation:
-https://timoanttila.com/tutorials/animated-smooth-scrolling-effect */
-
-$(function() {
-    $(".hide .nav-item a").click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash)
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']')
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 500);
-          return false;
-        }
-      }
+/*        link for scroll animation     
+https://html-online.com/articles/animated-scroll-anchorid-function-jquery/ */
+$(document).ready(function(){
+    $(".hide .nav-item a").click(function(e) {
+        e.preventDefault()
+        $("html, body").animate({ 
+            scrollTop: $($(this).attr("href")).offset().top 
+        }, 600)
     })
-  })
+})
 
 
 /*      highlight active menu when scrolling down to sections    */
 /* https://www.steckinsights.com/change-active-menu-as-you-scroll-with-jquery/ */
+function activeLink(){
+    let $scrollPosition = $(window).scrollTop()
+    let $aboutme = $("#aboutme").position().top
+    let $projects = $("#projects").position().top
+    let $contact = $("#contact").position().top
+
+    console.log($projects)
+
+    if ($scrollPosition >= $aboutme && $scrollPosition < $projects) { 
+        $(".nav-item-1").addClass("active")
+    } else {
+        $(".nav-item-1").removeClass("active")
+    }
+    if ($scrollPosition >= $projects && $scrollPosition < 1930) {
+        $(".nav-item-2").addClass("active")
+    } else { 
+        $(".nav-item-2").removeClass("active")
+    }
+    if ($scrollPosition > 1930) {
+        $(".nav-item-3").addClass("active")
+    } else { 
+        $(".nav-item-3").removeClass("active")
+    }
+}
 
 $(document).ready( () => { 
     $(window).scroll( () => {
-        let $scrollPosition = $(window).scrollTop() + 1
-        let $aboutme = $("#aboutme").offset().top
-        let $projects = $("#projects").offset().top
-        let $contact = $("#contact").offset().top
-
-        if ($scrollPosition >= $aboutme && $scrollPosition <= $projects) { 
-            $(".nav-item-1").addClass("active")
-        } else {
-            $(".nav-item-1").removeClass("active")
-        }
-        if ($scrollPosition >= $projects && $scrollPosition <= $contact) {
-            $(".nav-item-2").addClass("active")
-        } else { 
-            $(".nav-item-2").removeClass("active")
-        }
-        if ($scrollPosition >= $contact) {
-            $(".nav-item-3").addClass("active")
-        } else { 
-            $(".nav-item-3").removeClass("active")
-        }
+        activeLink()
     })
 })
