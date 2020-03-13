@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    font-family: "shadows into light", cursive;
+    font-family: Mali, cursive;
     color: #494F54;
 }
 
@@ -19,7 +19,7 @@ nav div:nth-of-type(1) {
 }
 
 .hide {
-    font-size: 40px;
+    font-size: 35px;
     list-style: none;
     text-align: center;
     text-transform: lowercase;
@@ -36,6 +36,7 @@ nav div:nth-of-type(1) {
 }
 
 ul > li a:hover, .active {
+    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -82,7 +83,7 @@ section:nth-of-type(1) div:nth-of-type(2) h1 {
 /* Projects */
 
 section:nth-of-type(2) h1 {
-    font-family: "shadows into light", cursive;
+    font-family: Mali, cursive;
     font-size: 40px;
 }
 
@@ -96,6 +97,10 @@ section > h1 {
     text-align: center;
 }
 
+p {
+    text-align: center;
+}
+
 .projects .boxes {
     height: 250px;
     width: 400px;
@@ -104,14 +109,18 @@ section > h1 {
 }
 
 .image {
-    /* border: 1px solid blue; */
     height: 160px;
     width: 400px;
 }
 
-/* form */
-section > h3 {
+.url {
+    font-weight: 600;
+}
+
+/* contact */
+section > h1 {
     text-align: center;
+    font-size: 3em;
 }
 
 form {
@@ -122,30 +131,49 @@ form {
 
 input {
     font-size: 20px;
-    font-family: "shadows into light", cursive;
+    font-family: Mali, cursive;
+    margin: 5px;
     height: 30px;
     width: 300px;
-    margin: 5px;
 }
 
 textarea {
     font-size: 20px;
-    font-family: "shadows into light", cursive;
+    font-family: Mali, cursive;
     width: 298px;
+    height: 100px;
     border: 2px solid lightgray;
+    margin: 5px 0 20px 0;
 }
 
-button {
-    font-family: "shadows into light", cursive;
-    font-size: 15px;
-    width: 70px;
+.button {
+    font-family: Mali, cursive;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    background-color: #494F54;
+    border-radius: 10%;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
 }
+
+.social-links {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.fab {
+    font-size: 2em;
+}
+
 
 /* footer */
 
 footer {
     text-align: center;
+    color: white;
+    margin-top: 40px;
+    padding: 10px 0 10px 0;
+    background-color: #494F54;
 }
 
 @media (min-width: 768px) {
@@ -169,7 +197,8 @@ footer {
         display: flex;
         justify-content: space-evenly;
         visibility: visible;
-        margin-top: -0px;
+        margin-top: 0;
+        padding: 5px 0 15px 0;
         position: fixed;
         top: 0;
         width: 100%;
@@ -181,11 +210,6 @@ footer {
         margin-top: 10px;
     }
 
-    section:nth-of-type(1) div:nth-of-type(2) h1 {
-        text-align: left;
-    }
-
-
     div:nth-of-type(1) h1 {
         font-size: 6em;
     }
@@ -195,6 +219,17 @@ footer {
     }
 
     .projects {
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(3, 40%);
+    }
+
+    .boxes {
+        margin-left: 20%;
+        margin-bottom: 50%;
+    }
+
+    .contact {
+        margin-top: 15%;
     }
 }
