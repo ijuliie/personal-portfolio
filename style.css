@@ -68,6 +68,15 @@ div:nth-of-type(1) h1 {
 
 /* about me */
 
+.selfie {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: lightcoral;
+    text-align: center;
+    margin: auto;
+}
+
 section:nth-of-type(1) div:nth-of-type(2) {
     margin-top: -200px;
     font-size: 1em;
@@ -110,11 +119,15 @@ p {
 
 .image {
     height: 160px;
-    width: 400px;
+    width: 100%;
 }
 
 .url {
     font-weight: 600;
+}
+
+.url:hover {
+    text-decoration: underline;
 }
 
 /* contact */
@@ -162,7 +175,8 @@ textarea {
 }
 
 .fab {
-    font-size: 2em;
+    font-size: 3em;
+    padding: 1%;
 }
 
 
