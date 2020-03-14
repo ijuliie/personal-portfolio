@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/media-query.css">
     <script 
         src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/240a684280.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Mali:400,500,600&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
+    <title>Julie Trinh</title>
 
 </head>
 <body>
@@ -50,11 +52,12 @@
 
 
         <div>
-            <h1>About Me</h1>
+            <h1>about me</h1>
 
             <div class="selfie">
 
                 <!-- picture of me goes here -->
+                <img src="https://i.imgur.com/W397ni1.jpg" title="source: imgur.com" /></a>
 
             </div>
 
@@ -69,7 +72,7 @@
     <!-- Projects section -->
     <section id="projects">
 
-        <h1>Projects</h1>
+        <h1>projects</h1>
 
         <div class="projects">
 
@@ -82,48 +85,52 @@
 
     <!-- contact form -->
     <section id="contact" class="contact">
-        <h1>Contact Me</h1>
+        <h1>contact me</h1>
 
 
         <div>
             <form action="">
-                <div class="name">
-                    <input type="text" placeholder="first & last name">
+                <div class="wrapper">
+                    <div class="name">
+                        <label for="name">Your Name:</label> 
+                        <input type="text" required="required">
+                    </div>
+
+                    <div class="email">
+                        <label for="email">Email Address:</label>
+                        <input type="email" required="required">
+                    </div>
+
+                    <div class="message">
+                        <label for="message">Message:</label>
+                        <textarea type="text"></textarea>
+                    </div>
+
+                    <div class="send">
+                        <input class="button" type="submit">
+                    </div>
                 </div>
 
-                <div class="email">
-                    <input type="email" placeholder="email">
-                </div>
-
-                <div>
-                    <textarea type="text" placeholder="thoughts, comments, and/or question?"></textarea>
-                </div>
-
-                <div>
-                    <a class="button" href="#">Send</a>
-                </div>
             </form>
-
-            <div class="social-links">
-                <a href="https://twitter.com/ijuliiee" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-    
-                <a href="https://www.linkedin.com/in/julie-trinh-762ba11a2/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-    
-                <a href="https://www.facebook.com/julie.trinh.752?ref=bookmarks" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-            </div>
-
         </div>
 
+        <div class="social-links">
+            <a href="https://twitter.com/ijuliiee" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+        
+            <a href="https://www.linkedin.com/in/julie-trinh-762ba11a2/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        
+            <a href="https://www.facebook.com/julie.trinh.752?ref=bookmarks" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
     </section>
 
     <footer>
-        <p>© with &hearts; by Julie</p>
+        <p>© 2020</p>
     </footer>
     
 
