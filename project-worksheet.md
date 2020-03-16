@@ -43,6 +43,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 -hamburger nav bar
 -pull data from google sheet
 
+
 #### PostMVP 
 -hamburger nav bar
 -pull data from google sheet
@@ -58,12 +59,9 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Background image banner | H | 2hrs | 2hrs | 2hrs |
 | Hamburger nav bar | H | 2hrs | 1.5 hrs | 3.5 hrs |
 | Animation on nav bar | H | 2hrs | 4 hrs | 6 hours |
 | Pull data from google sheet| H | 1 hr | 2.5 hrs | 2.5 hrs | 
-| Contact form | L | 1 hr | 2 hrs | 2 hr |
-| Styling | L | 2hrs | 3 hrs | 3 hrs |
 | Total | H | hrs| hrs | hrs |
 
 ## Additional Libraries
