@@ -5,7 +5,7 @@ https://ijuliie.github.io/personal-portfolio/
 This project was created to be my portfolio and show my technical skills.
 
 ### Motivation
-This project was originally assigned by my school General Assembly. It was a project to test our skills and showed what we've learned so far from the first two weeks, which was HTML, CSS, and Javascript. It will now be constantly updated as we I learn more and more throughout this course.
+This project was originally assigned by my school General Assembly. It was a project to test our skills and showed what we've learned so far from the first two weeks, which was HTML, CSS, and Javascript. It will now be constantly updated as I learn more and more throughout this course.
 
 ### Tech/Framework
 **Built with:**
