@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+## Porfolio
+https://ijuliie.github.io/personal-portfolio/
 
-You can use the [editor on GitHub](https://github.com/ijuliie/personal-portfolio/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Overview
+This project was created to be my portfolio and show my technical skills.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Motivation
+This project was originally assigned by my school General Assembly. It was a project to test our skills and showed what we've learned so far from the first two weeks, which was HTML, CSS, and Javascript. It will now be constantly updated as we I learn more and more throughout this course.
 
-### Markdown
+### Tech/Framework
+**Built with**
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+-Wireframe
 
-```markdown
-Syntax highlighted code block
+### Credits
 
-# Header 1
-## Header 2
-### Header 3
+These are a couple websites that helped me with the animations on my page:
 
-- Bulleted
-- List
+- https://html-online.com/articles/animated-scroll-anchorid-function-jquery/ 
+- https://www.steckinsights.com/change-active-menu-as-you-scroll-with-jquery/ 
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+### API Reference
 
-[Link](url) and ![Image](src)
-```
+I used Google Sheets to pull in my data and was able to append my projects on my portfolio.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Future Plans
 
-### Jekyll Themes
+-Add skills
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ijuliie/personal-portfolio/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Copyright
+Julie Trinh
