@@ -9,10 +9,10 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |  Day | Deliverable | Status
 |---|---| ---|
 |Day 1| Project Description | Complete
-|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Day 1| Wireframes / Priority Matrix / Timeline | Complete
+|Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
 |Day 4| MVP & Bug Fixes | Incomplete
-|Day 5| Final Touches | Incomplete
+|Day 5| Final Touches | Complete
 |Day 6| Present | Incomplete
 
 
@@ -45,10 +45,11 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 
 #### PostMVP 
--hamburger nav bar
--pull data from google sheet
--transition effect for navbar
--navbar is active when scrolled to content of page
+- hamburger nav bar
+- pull data from google sheet
+- transition effect for navbar
+- navbar is active when scrolled to content of page
+- scroll effect on nav links
 
 
 ## Functional Components
