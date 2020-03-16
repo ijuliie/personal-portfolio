@@ -67,11 +67,30 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+At one point, my active nav items were not working how I wanted it to, so when I was doing this code, I used the console to figure out the exact point of each scroll position.
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+function activeLink(){
+    let $scrollPosition = $(window).scrollTop()
+    let $aboutme = $("#aboutme").position().top
+    let $projects = $("#projects").position().top
+    let $contact = $("#contact").position().top
+
+    if ($scrollPosition >= $aboutme && $scrollPosition < $projects) { 
+        $(".nav-item-1").addClass("active")
+    } else {
+        $(".nav-item-1").removeClass("active")
+    }
+    if ($scrollPosition >= $projects && $scrollPosition < 1930) {
+        $(".nav-item-2").addClass("active")
+    } else { 
+        $(".nav-item-2").removeClass("active")
+    }
+    if ($scrollPosition > 1930) {
+        $(".nav-item-3").addClass("active")
+    } else { 
+        $(".nav-item-3").removeClass("active")
+    }
 }
 ```
 
