@@ -54,15 +54,12 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Functional Components
 
-Based on the initial logic defined in the previous sections try and breakdown the logic further into functional components, and by that we mean functions.  Try and capture what logic would need to be defined if the game was broken down into the following categories.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
-
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Hamburger nav bar | H | 2hrs | 1.5 hrs | 3.5 hrs |
 | Animation on nav bar | H | 2hrs | 4 hrs | 6 hours |
 | Pull data from google sheet| H | 1 hr | 2.5 hrs | 2.5 hrs | 
+| Scroll animation on nav links | H | 2 hrs | 5 hrs | 5 hrs | 
 | Total | H | hrs| hrs | hrs |
 
 ## Additional Libraries
