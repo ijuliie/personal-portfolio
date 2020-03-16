@@ -23,7 +23,7 @@ function appendData(projects, i) {
         let $wrapper = $("<div>").addClass("boxes")
         let $image = $("<img>").attr("src", projects[i].image).addClass("image")
         let $title = $("<p>").html(projects[i].title).addClass("title")
-        let $url = $("<a>").attr("href", projects[i].url).html("See code").addClass("url")
+        let $url = $("<a>").attr("href", projects[i].url).html("See app").addClass("url")
         
         $wrapper.append($image, $title, $url)
         $(".projects").append($wrapper)
@@ -74,8 +74,6 @@ function activeLink(){
     let $projects = $("#projects").position().top
     let $contact = $("#contact").position().top
 
-    console.log($projects)
-
     if ($scrollPosition >= $aboutme && $scrollPosition < $projects) { 
         $(".nav-item-1").addClass("active")
     } else {
@@ -97,4 +95,13 @@ $(document).ready( () => {
     $(window).scroll( () => {
         activeLink()
     })
+})
+
+
+$(".button").on("click", () => {
+    let $name = $(".name").val()
+    let $email = $(".email").val()
+    if($name === "" || $email === ""){
+        $($name).toggleClass("invalid")
+    }
 })
