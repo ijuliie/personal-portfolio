@@ -98,10 +98,10 @@ $(document).ready( () => {
 })
 
 
-$(".button").on("click", () => {
-    let $name = $(".name").val()
-    let $email = $(".email").val()
-    if($name === "" || $email === ""){
-        $($name).toggleClass("invalid")
-    }
-})
+// $(".button").on("click", () => {
+//     let $name = $(".name").val()
+//     let $email = $(".email").val()
+//     if($name === "" || $email === ""){
+//         $($name).toggleClass("invalid")
+//     }
+// })
