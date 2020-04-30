@@ -72,19 +72,18 @@ function activeLink(){
     let $scrollPosition = $(window).scrollTop()
     let $aboutme = $("#aboutme").position().top
     let $projects = $("#projects").position().top
-    let $contact = $("#contact").position().top
 
     if ($scrollPosition >= $aboutme && $scrollPosition < $projects) { 
         $(".nav-item-1").addClass("active")
     } else {
         $(".nav-item-1").removeClass("active")
     }
-    if ($scrollPosition >= $projects && $scrollPosition < 1930) {
+    if ($scrollPosition >= $projects && $scrollPosition < 1412) {
         $(".nav-item-2").addClass("active")
     } else { 
         $(".nav-item-2").removeClass("active")
     }
-    if ($scrollPosition > 1930) {
+    if ($scrollPosition > 1413) {
         $(".nav-item-3").addClass("active")
     } else { 
         $(".nav-item-3").removeClass("active")
@@ -96,12 +95,3 @@ $(document).ready( () => {
         activeLink()
     })
 })
-
-
-// $(".button").on("click", () => {
-//     let $name = $(".name").val()
-//     let $email = $(".email").val()
-//     if($name === "" || $email === ""){
-//         $($name).toggleClass("invalid")
-//     }
-// })
