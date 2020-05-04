@@ -5,8 +5,7 @@ body {
 }
 
 /* icon decoration */
-.fas {   
-    margin-left: 45px;
+.fas { 
     font-size: 40px;
     padding-top: 10px;
     cursor: pointer;
@@ -24,6 +23,8 @@ nav div:nth-of-type(1) {
     text-align: center;
     text-transform: lowercase;
     visibility: hidden;
+    display: block;
+    margin-right: 10%;
     margin-top: -150px;
     transition: all 0.5s linear;
 }
