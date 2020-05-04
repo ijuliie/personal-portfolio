@@ -18,7 +18,7 @@ form > .wrapper > div {
     text-align: center;
 }
 
-form > .wrapper > div > input {
+form > .wrapper > div > input, form > .wrapper > .message > .message-input {
     font-size: 15px;
     font-family: Mali, cursive;
     background-color: transparent;
@@ -28,6 +28,10 @@ form > .wrapper > div > input {
     border: 1px solid black;
     margin: 1% auto;
     border-radius: .50em;
+}
+
+form > .wrapper > .message > .message-input {
+    height: 75px;
 }
 
 .send {
