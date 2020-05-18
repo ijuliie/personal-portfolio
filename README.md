@@ -1,4 +1,4 @@
-## Porfolio
+## Portfolio
 https://ijuliie.github.io/personal-portfolio/
 
 ### Overview
