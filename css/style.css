@@ -119,11 +119,14 @@ p {
 .projects .boxes {
     height: 280px;
     width: 400px;
+    border-radius: 15px;
     margin-bottom: 3%;
     box-shadow: 5px 0px 20px 0px rgba(0,0,0,0.4);
 }
 
 .image {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     height: 190px;
     width: 100%;
 }
