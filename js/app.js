@@ -1,6 +1,7 @@
 let url = "https://docs.google.com/spreadsheets/d/1-cr4HyUsV0uPqpBe4AQIYyC5W2JHpm1-3mlrxi825ME/edit#gid=0"
 let id = "1-cr4HyUsV0uPqpBe4AQIYyC5W2JHpm1-3mlrxi825ME"
 let source = `https://spreadsheets.google.com/feeds/list/1-cr4HyUsV0uPqpBe4AQIYyC5W2JHpm1-3mlrxi825ME/od6/public/values?alt=json`
+let icons = ["./images/HTML5.png", "./images/css3.png", "./images/js.svg", "./images/jquery.gif", "./images/react.png", "./images/bootstrap-stack.png", "./images/responsive.png", "./images/heroku.png"]
 
 
 /*      parse data from google sheets    */
@@ -11,7 +12,8 @@ fetch(source)
             return {
                 title: project.gsx$title.$t,
                 image: project.gsx$image.$t,
-                url: project.gsx$url.$t
+                url: project.gsx$url.$t,
+                description: project.gsx$description.$t
             }
         })
         app(projects)
@@ -20,13 +22,22 @@ fetch(source)
 /*      append data into html       */
 function appendData(projects, i) {
     for(let i = 0; i < projects.length; i += 1){
-        let $wrapper = $("<div>").addClass("boxes")
+        let $boxes = $("<div>").addClass("boxes")
+        let $imageDiv = $("<div>")
         let $image = $("<img>").attr("src", projects[i].image).addClass("image")
+        let $titleDiv = $("<div>")
         let $title = $("<p>").html(projects[i].title).addClass("title")
+        let $urlDiv = $("<div>")
         let $url = $("<a>").attr("href", projects[i].url).html("See app").addClass("url")
-        
-        $wrapper.append($image, $title, $url)
-        $(".projects").append($wrapper)
+        let $descriptionDiv = $("<div>")
+        let $description = $("<p>").html(projects[i].description).addClass("description")
+
+        $imageDiv.append($image)
+        $titleDiv.append($title)
+        $descriptionDiv.append($description)
+        $urlDiv.append($url)
+        $boxes.append($imageDiv, $titleDiv, $descriptionDiv, $urlDiv)
+        $(".projects").append($boxes)
     }
 }
     
@@ -35,7 +46,13 @@ function app(projects){
     appendData(projects)
 }
 
+for(let i = 0; i < icons.length; i += 1){
+    let $wrapper = $("<div>").addClass("dev-icon")
+    let $icon = $("<img>").attr("src", icons[i])
 
+    $wrapper.append($icon)
+    $(".icons-wrapper").append($wrapper)
+}
 
 /*       Hamburger nav bar       */
 $(".fa-bars").on("click", () => {
@@ -72,18 +89,19 @@ function activeLink(){
     let $scrollPosition = $(window).scrollTop()
     let $aboutme = $("#aboutme").position().top
     let $projects = $("#projects").position().top
+    let $contact = $("#contact").position().top
 
     if ($scrollPosition >= $aboutme && $scrollPosition < $projects) { 
         $(".nav-item-1").addClass("active")
     } else {
         $(".nav-item-1").removeClass("active")
     }
-    if ($scrollPosition >= $projects && $scrollPosition < 1412) {
+    if ($scrollPosition >= $projects) {
         $(".nav-item-2").addClass("active")
-    } else { 
+    } else if ($scrollPosition < $contact) { 
         $(".nav-item-2").removeClass("active")
     }
-    if ($scrollPosition > 1413) {
+    if ($scrollPosition >= $contact) {
         $(".nav-item-3").addClass("active")
     } else { 
         $(".nav-item-3").removeClass("active")

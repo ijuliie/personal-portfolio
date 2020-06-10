@@ -4,7 +4,7 @@
     background-color: rgba(0,0,0,0.1);
 }
 
-section > h1 {
+#contact > h1 {
     padding-top: 5%;
     text-align: center;
     font-size: 3em;
@@ -23,15 +23,15 @@ form > .wrapper > div > input, form > .wrapper > .message > .message-input {
     font-family: Mali, cursive;
     background-color: transparent;
     display: block;
-    height: 25px;
-    width: 300px;
+    height: 30px;
+    width: 350px;
     border: 1px solid black;
     margin: 1% auto;
     border-radius: .50em;
 }
 
 form > .wrapper > .message > .message-input {
-    height: 75px;
+    height: 100px;
 }
 
 .send {
